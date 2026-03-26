@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO meta tag: opis stranice galerije filmova -->
+    <meta name="description" content="Galerija slika filmske tematike sa stiliziranim prikazom i lightbox efektom bez JavaScripta.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_slike.css">
+
+    <title>Galerija filmova</title>
+</head>
+<body>
+
+    <header>
+        <h1>Moja web stranica o filmovima</h1>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+    <nav aria-label="Primarna navigacija">
+        <ul class="nav-menu">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="grafikon.html">Grafikoni</a></li>
+            <li><a href="slike.html">Galerija</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="galerija" aria-labelledby="galerija-naslov">
+            <h2 id="galerija-naslov">Galerija filmskih slika</h2>
+            <p class="gallery-intro">
+                Klikom na sliku prikazuje se veća verzija bez korištenja JavaScripta.
+            </p>
+
+            <div class="img-gallery-magnific">
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img1">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=500&q=80" alt="Prazna kino dvorana s crvenim sjedalima" loading="lazy">
+                    </a>
+                    <figcaption>Kino dvorana</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img2">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=500&q=80" alt="Stara filmska kamera i filmska traka" loading="lazy">
+                    </a>
+                    <figcaption>Filmska kamera</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img3">
+                        <img src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?auto=format&fit=crop&w=500&q=80" alt="Vanjski prikaz starog kina noću" loading="lazy">
+                    </a>
+                    <figcaption>Kino izvana</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img4">
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=500&q=80" alt="Ljudi gledaju projekciju u kinu" loading="lazy">
+                    </a>
+                    <figcaption>Filmska projekcija</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img5">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80" alt="Filmski plakat i dvorana" loading="lazy">
+                    </a>
+                    <figcaption>Filmski plakat</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img6">
+                        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&w=500&q=80" alt="Filmski set s rasvjetom" loading="lazy">
+                    </a>
+                    <figcaption>Filmski set</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img7">
+                        <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=500&q=80" alt="Redateljska stolica na filmskom setu" loading="lazy">
+                    </a>
+                    <figcaption>Redateljska stolica</figcaption>
+                </figure>
+
+                <figure class="magnific-img galerija_slika">
+                    <a href="#img8">
+                        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=500&q=80" alt="Popcorn i kino ulaznica" loading="lazy">
+                    </a>
+                    <figcaption>Kino doživljaj</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="img1" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" alt="Prazna kino dvorana s crvenim sjedalima">
+    </div>
+
+    <div id="img2" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1200&q=80" alt="Stara filmska kamera i filmska traka">
+    </div>
+
+    <div id="img3" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?auto=format&fit=crop&w=1200&q=80" alt="Vanjski prikaz starog kina noću">
+    </div>
+
+    <div id="img4" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" alt="Ljudi gledaju projekciju u kinu">
+    </div>
+
+    <div id="img5" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80" alt="Filmski plakat i dvorana">
+    </div>
+
+    <div id="img6" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&w=1200&q=80" alt="Filmski set s rasvjetom">
+    </div>
+
+    <div id="img7" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1200&q=80" alt="Redateljska stolica na filmskom setu">
+    </div>
+
+    <div id="img8" class="lightbox">
+        <a href="#" class="lightbox-close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80" alt="Popcorn i kino ulaznica">
+    </div>
+
+    <footer>
+        <p>&copy; 2025. Web programiranje. Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>
